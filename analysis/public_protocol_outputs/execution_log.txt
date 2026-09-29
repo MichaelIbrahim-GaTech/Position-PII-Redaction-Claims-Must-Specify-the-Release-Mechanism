@@ -1,0 +1,63 @@
+Loaded 14 actual published system rows; source arXiv:2609.02207v1.
+Input SHA256: 19a6371e952b5d0b50d9305e57acba03055ab167eae644583273db1bac1f9076
+{
+  "numeric_table_verified": true,
+  "checked_html_sha256": "0664b482d98c482ddb81f92264a8a0514917ec2ee4f25da74ea85e5681eb2743",
+  "matches_original_html_hash": true
+}
+Common critical-applicable count under nearest rounding: [493, 494, 495, 496, 497, 498, 499, 500]
+Common critical-applicable count under truncation: [500]
+Presidio: 98.981670% to 98.995984%; valid critical denominator 491..498
+Presidio-best (GLiNER restr.): 98.580122% to 98.600000%; valid critical denominator 493..500
+GLiNER-base: 97.768763% to 97.800000%; valid critical denominator 493..500
+GLiNER-multi-PII: 97.160243% to 97.200000%; valid critical denominator 493..500
+NVIDIA GLiNER PII: 98.580122% to 98.600000%; valid critical denominator 493..500
+GLiNER2: 99.390244% to 99.398798%; valid critical denominator 492..499
+Amazon Comprehend PII: 96.754564% to 96.800000%; valid critical denominator 493..500
+OpenAI Privacy Filter: 98.737374% to 98.759305%; valid critical denominator 396..403
+Google DLP: 100.000000% to 100.000000%; valid critical denominator 493..500
+Qwen3-VL-32B: 99.693252% to 99.699700%; valid critical denominator 326..333
+InternVL3-38B: 100.000000% to 100.000000%; valid critical denominator 263..270
+GPT-5.4: 100.000000% to 100.000000%; valid critical denominator 493..500
+GPT-5.5: 98.985801% to 99.000000%; valid critical denominator 493..500
+GPT-5.5 + Code Interpreter: 96.754564% to 96.800000%; valid critical denominator 493..500
+OpenAI Privacy Filter nearest all_14_rows 98.737374%..98.759305%
+Qwen3-VL-32B nearest all_14_rows 99.693252%..99.699700%
+InternVL3-38B nearest all_14_rows 100.000000%..100.000000%
+OpenAI Privacy Filter nearest own_row_only 0.000000%..99.047619%
+Qwen3-VL-32B nearest own_row_only 99.570815%..99.699700%
+InternVL3-38B nearest own_row_only 100.000000%..100.000000%
+OpenAI Privacy Filter truncation all_14_rows 98.759305%..98.759305%
+Qwen3-VL-32B truncation all_14_rows 99.699700%..99.699700%
+InternVL3-38B truncation all_14_rows 100.000000%..100.000000%
+OpenAI Privacy Filter truncation own_row_only 66.666667%..99.099099%
+Qwen3-VL-32B truncation own_row_only 99.699700%..99.699700%
+InternVL3-38B truncation own_row_only 100.000000%..100.000000%
+Same-denominator completions: [
+  {
+    "system": "OpenAI Privacy Filter",
+    "completion": "completion_A",
+    "status": "compatible_completion_not_observed_data",
+    "D": 493,
+    "F": 488,
+    "V": 403,
+    "I": 97,
+    "valid_critical_pages": 396,
+    "valid_critical_failures": 391,
+    "exact_post_gate_ratio": "391/396"
+  },
+  {
+    "system": "OpenAI Privacy Filter",
+    "completion": "completion_B",
+    "status": "compatible_completion_not_observed_data",
+    "D": 493,
+    "F": 488,
+    "V": 403,
+    "I": 90,
+    "valid_critical_pages": 403,
+    "valid_critical_failures": 398,
+    "exact_post_gate_ratio": "398/403"
+  }
+]
+All exact finite-table checks passed. No model was trained or evaluated.
+Executed 6 cells.

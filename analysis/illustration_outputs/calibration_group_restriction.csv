@@ -1,0 +1,4 @@
+release_rule,constant_score,released_records,failed_releases,conditional_failure_proportion
+all,0.01,1000,10,0.01
+restrict_to_group_A,0.01,100,10,0.1
+group_B_for_diagnosis,0.01,900,0,0

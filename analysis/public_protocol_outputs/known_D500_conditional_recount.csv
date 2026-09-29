@@ -1,0 +1,15 @@
+system,status,critical_pages,valid_critical_pages,valid_critical_failures,exact_ratio,ratio
+Presidio,conditional_on_separately_known_D500_not_a_reported_denominator,500,498,493,493/498,0.9899598393574297
+Presidio-best (GLiNER restr.),conditional_on_separately_known_D500_not_a_reported_denominator,500,500,493,493/500,0.986
+GLiNER-base,conditional_on_separately_known_D500_not_a_reported_denominator,500,500,489,489/500,0.978
+GLiNER-multi-PII,conditional_on_separately_known_D500_not_a_reported_denominator,500,500,486,243/250,0.972
+NVIDIA GLiNER PII,conditional_on_separately_known_D500_not_a_reported_denominator,500,500,493,493/500,0.986
+GLiNER2,conditional_on_separately_known_D500_not_a_reported_denominator,500,499,496,496/499,0.9939879759519038
+Amazon Comprehend PII,conditional_on_separately_known_D500_not_a_reported_denominator,500,500,484,121/125,0.968
+OpenAI Privacy Filter,conditional_on_separately_known_D500_not_a_reported_denominator,500,403,398,398/403,0.9875930521091811
+Google DLP,conditional_on_separately_known_D500_not_a_reported_denominator,500,500,500,1,1.0
+Qwen3-VL-32B,conditional_on_separately_known_D500_not_a_reported_denominator,500,333,332,332/333,0.996996996996997
+InternVL3-38B,conditional_on_separately_known_D500_not_a_reported_denominator,500,270,270,1,1.0
+GPT-5.4,conditional_on_separately_known_D500_not_a_reported_denominator,500,500,500,1,1.0
+GPT-5.5,conditional_on_separately_known_D500_not_a_reported_denominator,500,500,495,99/100,0.99
+GPT-5.5 + Code Interpreter,conditional_on_separately_known_D500_not_a_reported_denominator,500,500,484,121/125,0.968

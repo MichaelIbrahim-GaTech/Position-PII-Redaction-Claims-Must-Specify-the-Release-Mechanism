@@ -1,0 +1,3 @@
+gate,processed_records,released_records,unsafe_released_records,pre_gate_unsafe_rate_q,coverage_c,joint_bad_and_released_rate,conditional_bad_release_rate,feasible_conditional_lower_bound,feasible_conditional_upper_bound
+old,1000,800,8,0.008,0.8,0.008,0.01,0.0,0.01
+stricter_nested,1000,80,8,0.008,0.08,0.008,0.1,0.0,0.1

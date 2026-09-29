@@ -1,0 +1,15 @@
+system,formatting,denominator_information,reported_valid,reported_critical_docleak,all_pages,valid_all_pages,critical_pages_min,critical_pages_max,valid_critical_pages_min,valid_critical_pages_max,lower_bound,upper_bound,lower_bound_fraction,upper_bound_fraction,feasible_count_completions,interpretation
+Presidio,nearest,all_14_rows,0.996,0.990,500,498,493,500,491,498,0.9898167006109979,0.9899598393574297,486/491,493/498,21,finite_table_typed_IoU_matching_not_confidence_or_containment
+Presidio-best (GLiNER restr.),nearest,all_14_rows,1.000,0.986,500,500,493,500,493,500,0.9858012170385395,0.986,486/493,493/500,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-base,nearest,all_14_rows,1.000,0.978,500,500,493,500,493,500,0.9776876267748479,0.978,482/493,489/500,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-multi-PII,nearest,all_14_rows,1.000,0.972,500,500,493,500,493,500,0.9716024340770791,0.972,479/493,243/250,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+NVIDIA GLiNER PII,nearest,all_14_rows,1.000,0.986,500,500,493,500,493,500,0.9858012170385395,0.986,486/493,493/500,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER2,nearest,all_14_rows,0.998,0.994,500,499,493,500,492,499,0.9939024390243902,0.9939879759519038,163/164,496/499,15,finite_table_typed_IoU_matching_not_confidence_or_containment
+Amazon Comprehend PII,nearest,all_14_rows,1.000,0.968,500,500,493,500,493,500,0.9675456389452333,0.968,477/493,121/125,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+OpenAI Privacy Filter,nearest,all_14_rows,0.806,0.990,500,403,493,500,396,403,0.9873737373737373,0.9875930521091811,391/396,398/403,36,finite_table_typed_IoU_matching_not_confidence_or_containment
+Google DLP,nearest,all_14_rows,1.000,1.000,500,500,493,500,493,500,1.0,1.0,1,1,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+Qwen3-VL-32B,nearest,all_14_rows,0.666,0.998,500,333,493,500,326,333,0.9969325153374233,0.996996996996997,325/326,332/333,36,finite_table_typed_IoU_matching_not_confidence_or_containment
+InternVL3-38B,nearest,all_14_rows,0.540,1.000,500,270,493,500,263,270,1.0,1.0,1,1,36,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.4,nearest,all_14_rows,1.000,1.000,500,500,493,500,493,500,1.0,1.0,1,1,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5,nearest,all_14_rows,1.000,0.990,500,500,493,500,493,500,0.9898580121703854,0.99,488/493,99/100,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5 + Code Interpreter,nearest,all_14_rows,1.000,0.968,500,500,493,500,493,500,0.9675456389452333,0.968,477/493,121/125,8,finite_table_typed_IoU_matching_not_confidence_or_containment

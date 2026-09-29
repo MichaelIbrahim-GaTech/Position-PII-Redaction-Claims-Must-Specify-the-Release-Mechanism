@@ -1,0 +1,3 @@
+gate,unsafe_records,safe_records,total_records
+released,1000,9000,10000
+withheld,0,90000,90000

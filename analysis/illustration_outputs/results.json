@@ -1,0 +1,589 @@
+{
+  "status": "analytical_illustrations_only_no_real_world_measurements",
+  "manuscript_title": "Position: PII Redaction Claims Must Specify the Release Mechanism",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "mention_vs_record": [
+    {
+      "system": "A: dispersed misses",
+      "records": 1000,
+      "mentions_per_record": 100,
+      "true_positive_mentions": 99000,
+      "false_positive_mentions": 0,
+      "false_negative_mentions": 1000,
+      "micro_precision": 1.0,
+      "micro_recall": 0.99,
+      "micro_F1": 0.9949748743718593,
+      "micro_F10": 0.9900980295078721,
+      "bad_released_records": 1000,
+      "released_records": 1000,
+      "bad_release_rate": 1.0
+    },
+    {
+      "system": "B: concentrated misses",
+      "records": 1000,
+      "mentions_per_record": 100,
+      "true_positive_mentions": 99000,
+      "false_positive_mentions": 0,
+      "false_negative_mentions": 1000,
+      "micro_precision": 1.0,
+      "micro_recall": 0.99,
+      "micro_F1": 0.9949748743718593,
+      "micro_F10": 0.9900980295078721,
+      "bad_released_records": 10,
+      "released_records": 1000,
+      "bad_release_rate": 0.01
+    }
+  ],
+  "release_conditioning": {
+    "processed_records": 100000,
+    "released_records": 10000,
+    "unsafe_released_records": 1000,
+    "unsafe_withheld_records": 0,
+    "coverage": 0.1,
+    "pre_gate_unsafe_rate": 0.01,
+    "joint_bad_and_released_rate": 0.01,
+    "conditional_bad_release_rate": 0.1
+  },
+  "release_selection_sweep": [
+    {
+      "bad_released": 0,
+      "bad_withheld": 1000,
+      "safe_released": 10000,
+      "safe_withheld": 89000,
+      "release_coverage": 0.1,
+      "pre_gate_bad_rate": 0.01,
+      "joint_bad_and_released_rate": 0.0,
+      "conditional_bad_release_rate": 0.0,
+      "binary_gate_error_correlation": -0.0335012605086404
+    },
+    {
+      "bad_released": 50,
+      "bad_withheld": 950,
+      "safe_released": 9950,
+      "safe_withheld": 89050,
+      "release_coverage": 0.1,
+      "pre_gate_bad_rate": 0.01,
+      "joint_bad_and_released_rate": 0.0005,
+      "conditional_bad_release_rate": 0.005,
+      "binary_gate_error_correlation": -0.0167506302543202
+    },
+    {
+      "bad_released": 100,
+      "bad_withheld": 900,
+      "safe_released": 9900,
+      "safe_withheld": 89100,
+      "release_coverage": 0.1,
+      "pre_gate_bad_rate": 0.01,
+      "joint_bad_and_released_rate": 0.001,
+      "conditional_bad_release_rate": 0.01,
+      "binary_gate_error_correlation": 0.0
+    },
+    {
+      "bad_released": 250,
+      "bad_withheld": 750,
+      "safe_released": 9750,
+      "safe_withheld": 89250,
+      "release_coverage": 0.1,
+      "pre_gate_bad_rate": 0.01,
+      "joint_bad_and_released_rate": 0.0025,
+      "conditional_bad_release_rate": 0.025,
+      "binary_gate_error_correlation": 0.0502518907629606
+    },
+    {
+      "bad_released": 500,
+      "bad_withheld": 500,
+      "safe_released": 9500,
+      "safe_withheld": 89500,
+      "release_coverage": 0.1,
+      "pre_gate_bad_rate": 0.01,
+      "joint_bad_and_released_rate": 0.005,
+      "conditional_bad_release_rate": 0.05,
+      "binary_gate_error_correlation": 0.1340050420345616
+    },
+    {
+      "bad_released": 750,
+      "bad_withheld": 250,
+      "safe_released": 9250,
+      "safe_withheld": 89750,
+      "release_coverage": 0.1,
+      "pre_gate_bad_rate": 0.01,
+      "joint_bad_and_released_rate": 0.0075,
+      "conditional_bad_release_rate": 0.075,
+      "binary_gate_error_correlation": 0.21775819330616258
+    },
+    {
+      "bad_released": 1000,
+      "bad_withheld": 0,
+      "safe_released": 9000,
+      "safe_withheld": 90000,
+      "release_coverage": 0.1,
+      "pre_gate_bad_rate": 0.01,
+      "joint_bad_and_released_rate": 0.01,
+      "conditional_bad_release_rate": 0.1,
+      "binary_gate_error_correlation": 0.30151134457776363
+    }
+  ],
+  "gate_tightening": [
+    {
+      "gate": "old",
+      "processed_records": 1000,
+      "released_records": 800,
+      "unsafe_released_records": 8,
+      "pre_gate_unsafe_rate_q": 0.008,
+      "coverage_c": 0.8,
+      "joint_bad_and_released_rate": 0.008,
+      "conditional_bad_release_rate": 0.01,
+      "feasible_conditional_lower_bound": 0.0,
+      "feasible_conditional_upper_bound": 0.01
+    },
+    {
+      "gate": "stricter_nested",
+      "processed_records": 1000,
+      "released_records": 80,
+      "unsafe_released_records": 8,
+      "pre_gate_unsafe_rate_q": 0.008,
+      "coverage_c": 0.08,
+      "joint_bad_and_released_rate": 0.008,
+      "conditional_bad_release_rate": 0.1,
+      "feasible_conditional_lower_bound": 0.0,
+      "feasible_conditional_upper_bound": 0.1
+    }
+  ],
+  "protected_content_denominator": [
+    {
+      "gate": "protected_only",
+      "input_records": 1000,
+      "released_records": 100,
+      "protected_content_released_records": 100,
+      "failed_releases": 10,
+      "coverage": 0.1,
+      "protected_content_prevalence_among_releases": 1.0,
+      "all_release_failure_proportion": 0.1,
+      "protected_content_release_failure_proportion": 0.1,
+      "joint_failed_release_proportion": 0.01
+    },
+    {
+      "gate": "plus_900_without_protected_content",
+      "input_records": 1000,
+      "released_records": 1000,
+      "protected_content_released_records": 100,
+      "failed_releases": 10,
+      "coverage": 1.0,
+      "protected_content_prevalence_among_releases": 0.1,
+      "all_release_failure_proportion": 0.01,
+      "protected_content_release_failure_proportion": 0.1,
+      "joint_failed_release_proportion": 0.01
+    }
+  ],
+  "keep_drop_identity": {
+    "old_released_records": 800,
+    "kept_records": 80,
+    "dropped_records": 720,
+    "kept_failures": 8,
+    "dropped_failures": 0,
+    "retention_fraction_rho": 0.1,
+    "old_risk": 0.01,
+    "keep_risk_new_risk": 0.1,
+    "drop_risk": 0.0,
+    "new_minus_old_risk": 0.09000000000000001
+  },
+  "monotone_score_thresholds": [
+    {
+      "score_threshold": 0.01,
+      "released_records": 1000,
+      "failed_releases": 10,
+      "coverage": 0.25,
+      "conditional_failure_proportion": 0.01
+    },
+    {
+      "score_threshold": 0.05,
+      "released_records": 2000,
+      "failed_releases": 60,
+      "coverage": 0.5,
+      "conditional_failure_proportion": 0.03
+    },
+    {
+      "score_threshold": 0.1,
+      "released_records": 3000,
+      "failed_releases": 160,
+      "coverage": 0.75,
+      "conditional_failure_proportion": 0.05333333333333334
+    },
+    {
+      "score_threshold": 0.2,
+      "released_records": 4000,
+      "failed_releases": 360,
+      "coverage": 1.0,
+      "conditional_failure_proportion": 0.09
+    }
+  ],
+  "calibration_group_restriction": [
+    {
+      "release_rule": "all",
+      "constant_score": 0.01,
+      "released_records": 1000,
+      "failed_releases": 10,
+      "conditional_failure_proportion": 0.01
+    },
+    {
+      "release_rule": "restrict_to_group_A",
+      "constant_score": 0.01,
+      "released_records": 100,
+      "failed_releases": 10,
+      "conditional_failure_proportion": 0.1
+    },
+    {
+      "release_rule": "group_B_for_diagnosis",
+      "constant_score": 0.01,
+      "released_records": 900,
+      "failed_releases": 0,
+      "conditional_failure_proportion": 0
+    }
+  ],
+  "hypothetical_audit_counts": {
+    "status": "stipulated_counts_not_observations",
+    "input_records": 5000,
+    "released_records": 3000,
+    "failed_releases": 0,
+    "protected_content_released_records": 300,
+    "protected_content_failed_releases": 0,
+    "empirical_coverage": 0.6,
+    "empirical_protected_content_prevalence_among_releases": 0.1,
+    "empirical_all_release_failure_proportion": 0.0,
+    "empirical_protected_content_release_failure_proportion": 0.0,
+    "target_risk": 0.001
+  },
+  "hypothetical_audit_bounds": [
+    {
+      "status": "stipulated_counts_not_observations",
+      "confidence_design": "individual_95_percent",
+      "population": "all_released_records",
+      "input_records": 5000,
+      "applicable_released_records": 3000,
+      "failures": 0,
+      "per_claim_delta": 0.05,
+      "upper_risk_bound": 0.000998079011996587,
+      "supports_point_one_percent_target": true
+    },
+    {
+      "status": "stipulated_counts_not_observations",
+      "confidence_design": "individual_95_percent",
+      "population": "released_records_with_protected_content",
+      "input_records": 5000,
+      "applicable_released_records": 300,
+      "failures": 0,
+      "per_claim_delta": 0.05,
+      "upper_risk_bound": 0.009936081944457711,
+      "supports_point_one_percent_target": false
+    },
+    {
+      "status": "stipulated_counts_not_observations",
+      "confidence_design": "simultaneous_95_percent_two_claims",
+      "population": "all_released_records",
+      "input_records": 5000,
+      "applicable_released_records": 3000,
+      "failures": 0,
+      "per_claim_delta": 0.025,
+      "upper_risk_bound": 0.001228870803825512,
+      "supports_point_one_percent_target": false
+    },
+    {
+      "status": "stipulated_counts_not_observations",
+      "confidence_design": "simultaneous_95_percent_two_claims",
+      "population": "released_records_with_protected_content",
+      "input_records": 5000,
+      "applicable_released_records": 300,
+      "failures": 0,
+      "per_claim_delta": 0.025,
+      "upper_risk_bound": 0.012220974694293554,
+      "supports_point_one_percent_target": false
+    }
+  ],
+  "gate_transfer_joint_bound": {
+    "status": "stipulated_counts_not_observations",
+    "old_released_audit_records": 3000,
+    "old_failures": 0,
+    "retained_records": 1500,
+    "retention_point_estimate": 0.5,
+    "total_delta": 0.05,
+    "old_risk_delta": 0.025,
+    "retention_delta": 0.025,
+    "old_risk_upper_bound": 0.001228870803825512,
+    "retention_lower_bound": 0.48194876932698494,
+    "jointly_valid_transferred_risk_upper_bound": 0.0025497955011723815
+  },
+  "audit_to_update_wrapper_verification": {
+    "status": "handcrafted_software_checks_only_not_an_audit",
+    "fixed_extractor_is_a_mathematical_parameter": true,
+    "real_model_evaluated": false,
+    "replacement_character": "*",
+    "all_handcrafted_checks_passed": true
+  },
+  "audit_to_update_decisions": [
+    {
+      "status": "stipulated_audit_counts_not_pipeline_measurements",
+      "update": "baseline",
+      "release_rule": "g0: validated UTF-8 and length <= 4096",
+      "input_records": 5000,
+      "applicable_released_records": 3000,
+      "failures": 0,
+      "protected_content_released_records": 300,
+      "confidence_procedure": "individual_baseline_95_percent",
+      "risk_delta": 0.05,
+      "retention_delta": "",
+      "retention_lower_bound": "not_used",
+      "upper_risk_bound": 0.000998079011996587,
+      "target_risk": 0.001,
+      "target_established": true,
+      "decision": "target_established_under_hypothetical_assumptions",
+      "simultaneous_95_percent_coverage_across_all_rows_claimed": false
+    },
+    {
+      "status": "stipulated_audit_counts_not_pipeline_measurements",
+      "update": "mask_expansion",
+      "release_rule": "same g0; expand masks one code point at both ends",
+      "input_records": 5000,
+      "applicable_released_records": 3000,
+      "failures": 0,
+      "protected_content_released_records": 300,
+      "confidence_procedure": "inherits_the_baseline_confidence_event",
+      "risk_delta": 0.05,
+      "retention_delta": "",
+      "retention_lower_bound": "not_used",
+      "upper_risk_bound": 0.000998079011996587,
+      "target_risk": 0.001,
+      "target_established": true,
+      "decision": "target_inherited_by_pointwise_loss_dominance",
+      "simultaneous_95_percent_coverage_across_all_rows_claimed": false
+    },
+    {
+      "status": "stipulated_audit_counts_not_pipeline_measurements",
+      "update": "restricted_gate_transfer",
+      "release_rule": "g2 = g0 and length <= 2048",
+      "input_records": 5000,
+      "applicable_released_records": 1500,
+      "failures": 0,
+      "protected_content_released_records": "not_stipulated",
+      "confidence_procedure": "joint_transfer_plan_95_percent",
+      "risk_delta": 0.025,
+      "retention_delta": 0.025,
+      "retention_lower_bound": 0.48194876932698494,
+      "upper_risk_bound": 0.0025497955011723815,
+      "target_risk": 0.001,
+      "target_established": false,
+      "decision": "target_not_established_not_proved_violated",
+      "simultaneous_95_percent_coverage_across_all_rows_claimed": false
+    },
+    {
+      "status": "stipulated_audit_counts_not_pipeline_measurements",
+      "update": "restricted_gate_direct",
+      "release_rule": "g2 = g0 and length <= 2048",
+      "input_records": 5000,
+      "applicable_released_records": 1500,
+      "failures": 0,
+      "protected_content_released_records": "not_stipulated",
+      "confidence_procedure": "separate_individual_direct_95_percent",
+      "risk_delta": 0.05,
+      "retention_delta": "",
+      "retention_lower_bound": "not_used",
+      "upper_risk_bound": 0.0019951618622789857,
+      "target_risk": 0.001,
+      "target_established": false,
+      "decision": "target_not_established_not_proved_violated",
+      "simultaneous_95_percent_coverage_across_all_rows_claimed": false
+    }
+  ],
+  "audit_sample_sizes": [
+    {
+      "target_risk_alpha": 0.01,
+      "prespecified_claims_H": 1,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.05,
+      "zero_failure_audits_per_claim": 299,
+      "upper_bound_at_n": 0.00996914679289927,
+      "upper_bound_at_n_minus_1": 0.010002432437677695
+    },
+    {
+      "target_risk_alpha": 0.01,
+      "prespecified_claims_H": 20,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.0025,
+      "zero_failure_audits_per_claim": 597,
+      "upper_bound_at_n": 0.009985761877752321,
+      "upper_bound_at_n_minus_1": 0.010002432437677695
+    },
+    {
+      "target_risk_alpha": 0.01,
+      "prespecified_claims_H": 100,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.0005,
+      "zero_failure_audits_per_claim": 757,
+      "upper_bound_at_n": 0.009990581509038537,
+      "upper_bound_at_n_minus_1": 0.010003730242644365
+    },
+    {
+      "target_risk_alpha": 0.001,
+      "prespecified_claims_H": 1,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.05,
+      "zero_failure_audits_per_claim": 2995,
+      "upper_bound_at_n": 0.0009997444209011422,
+      "upper_bound_at_n_minus_1": 0.00100007816984667
+    },
+    {
+      "target_risk_alpha": 0.001,
+      "prespecified_claims_H": 20,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.0025,
+      "zero_failure_audits_per_claim": 5989,
+      "upper_bound_at_n": 0.0009999112675243484,
+      "upper_bound_at_n_minus_1": 0.00100007816984667
+    },
+    {
+      "target_risk_alpha": 0.001,
+      "prespecified_claims_H": 100,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.0005,
+      "zero_failure_audits_per_claim": 7598,
+      "upper_bound_at_n": 0.0009998817878384154,
+      "upper_bound_at_n_minus_1": 0.001000013337354481
+    },
+    {
+      "target_risk_alpha": 0.0001,
+      "prespecified_claims_H": 1,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.05,
+      "zero_failure_audits_per_claim": 29956,
+      "upper_bound_at_n": 9.999941531978724e-05,
+      "upper_bound_at_n_minus_1": 0.000100002753474187
+    },
+    {
+      "target_risk_alpha": 0.0001,
+      "prespecified_claims_H": 20,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.0025,
+      "zero_failure_audits_per_claim": 59912,
+      "upper_bound_at_n": 9.999941531978724e-05,
+      "upper_bound_at_n_minus_1": 0.00010000108436912924
+    },
+    {
+      "target_risk_alpha": 0.0001,
+      "prespecified_claims_H": 100,
+      "familywise_delta": 0.05,
+      "per_claim_delta": 0.0005,
+      "zero_failure_audits_per_claim": 76006,
+      "upper_bound_at_n": 9.99989791853852e-05,
+      "upper_bound_at_n_minus_1": 0.00010000029480908175
+    }
+  ],
+  "audit_100_vs_500": [
+    {
+      "zero_failure_audits": 100,
+      "prespecified_claims_H": 1,
+      "per_claim_delta": 0.05,
+      "one_sided_upper_bound": 0.029513049607039932
+    },
+    {
+      "zero_failure_audits": 100,
+      "prespecified_claims_H": 20,
+      "per_claim_delta": 0.0025,
+      "one_sided_upper_bound": 0.058155079116972264
+    },
+    {
+      "zero_failure_audits": 100,
+      "prespecified_claims_H": 100,
+      "per_claim_delta": 0.0005,
+      "one_sided_upper_bound": 0.07319215754417004
+    },
+    {
+      "zero_failure_audits": 500,
+      "prespecified_claims_H": 1,
+      "per_claim_delta": 0.05,
+      "one_sided_upper_bound": 0.005973551516349559
+    },
+    {
+      "zero_failure_audits": 500,
+      "prespecified_claims_H": 20,
+      "per_claim_delta": 0.0025,
+      "one_sided_upper_bound": 0.011911419714980637
+    },
+    {
+      "zero_failure_audits": 500,
+      "prespecified_claims_H": 100,
+      "per_claim_delta": 0.0005,
+      "one_sided_upper_bound": 0.015086840774094199
+    }
+  ],
+  "candidate_omission_example": {
+    "released_records": 100000,
+    "records_with_sensitive_content_outside_all_candidate_masks": 200,
+    "candidate_classification_errors": 0,
+    "additional_suppression_or_fallback": false,
+    "actual_bad_release_rate": 0.002,
+    "omission_floor": 0.002,
+    "target_risk_alpha": 0.001,
+    "target_attainable_under_stated_restrictions": false
+  },
+  "geometric_containment_vs_matching": [
+    {
+      "scenario": "matching",
+      "status": "exact_hypothetical_geometry",
+      "gold_area": 100,
+      "opaque_mask_area": 100,
+      "mask_area_over_gold_area": 1.0,
+      "intersection_area": 100,
+      "intersection_over_union": 1.0,
+      "matching_threshold": 0.75,
+      "same_correct_type": true,
+      "passes_iou_matching": true,
+      "complete_concealment": true,
+      "uncovered_gold_fraction": 0.0
+    },
+    {
+      "scenario": "containing_expansion",
+      "status": "exact_hypothetical_geometry",
+      "gold_area": 100,
+      "opaque_mask_area": 200,
+      "mask_area_over_gold_area": 2.0,
+      "intersection_area": 100,
+      "intersection_over_union": 0.5,
+      "matching_threshold": 0.75,
+      "same_correct_type": true,
+      "passes_iou_matching": false,
+      "complete_concealment": true,
+      "uncovered_gold_fraction": 0.0
+    },
+    {
+      "scenario": "inner_partial_mask",
+      "status": "exact_hypothetical_geometry",
+      "gold_area": 100,
+      "opaque_mask_area": 80,
+      "mask_area_over_gold_area": 0.8,
+      "intersection_area": 80,
+      "intersection_over_union": 0.8,
+      "matching_threshold": 0.75,
+      "same_correct_type": true,
+      "passes_iou_matching": true,
+      "complete_concealment": false,
+      "uncovered_gold_fraction": 0.19999999999999996
+    }
+  ],
+  "invalid_output_withholding": {
+    "status": "exact_hypothetical_matching_protocol",
+    "applicable_pages": 20,
+    "original_matching_failures": 8,
+    "invalid_outputs_all_matching_failures": 5,
+    "valid_pages": 15,
+    "valid_output_matching_failures": 3,
+    "original_matching_failure_proportion": 0.4,
+    "valid_fraction_among_applicable_pages": 0.75,
+    "valid_output_matching_failure_proportion": 0.2,
+    "feasible_count_states_checked_at_N20": 230
+  },
+  "deterministic_assertions_passed": true
+}

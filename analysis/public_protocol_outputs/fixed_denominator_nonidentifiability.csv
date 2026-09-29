@@ -1,0 +1,3 @@
+system,completion,status,D,F,V,I,valid_critical_pages,valid_critical_failures,exact_post_gate_ratio
+OpenAI Privacy Filter,completion_A,compatible_completion_not_observed_data,493,488,403,97,396,391,391/396
+OpenAI Privacy Filter,completion_B,compatible_completion_not_observed_data,493,488,403,90,403,398,398/403

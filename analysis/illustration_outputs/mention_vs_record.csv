@@ -1,0 +1,3 @@
+system,records,mentions_per_record,true_positive_mentions,false_positive_mentions,false_negative_mentions,micro_precision,micro_recall,micro_F1,micro_F10,bad_released_records,released_records,bad_release_rate
+A: dispersed misses,1000,100,99000,0,1000,1.0,0.99,0.9949748743718593,0.9900980295078721,1000,1000,1.0
+B: concentrated misses,1000,100,99000,0,1000,1.0,0.99,0.9949748743718593,0.9900980295078721,10,1000,0.01

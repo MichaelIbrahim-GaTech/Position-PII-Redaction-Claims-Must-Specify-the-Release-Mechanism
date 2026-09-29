@@ -1,0 +1,2 @@
+released_records,records_with_sensitive_content_outside_all_candidate_masks,candidate_classification_errors,additional_suppression_or_fallback,actual_bad_release_rate,omission_floor,target_risk_alpha,target_attainable_under_stated_restrictions
+100000,200,0,False,0.002,0.002,0.001,False

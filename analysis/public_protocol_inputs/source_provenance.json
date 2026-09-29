@@ -1,0 +1,57 @@
+{
+  "source_title": "LeakageBench: Document-Level Leakage Risk for Redacting Personally Identifiable Information in Document Images",
+  "source_authors": [
+    "Vishnu Prasad Vijaya Kumar",
+    "Santhosh Venkatesh",
+    "Ivan P. Yamshchikov"
+  ],
+  "source_id": "arXiv:2609.02207v1",
+  "source_version_date": "2026-09-02",
+  "retrieved_date_utc": "2026-09-23",
+  "source_url": "https://arxiv.org/html/2609.02207v1",
+  "source_table_id": "S6.T3",
+  "source_table_label": "Table 3, full-schema results at IoU 0.75",
+  "source_html_sha256": "0664b482d98c482ddb81f92264a8a0514917ec2ee4f25da74ea85e5681eb2743",
+  "source_html_bytes": 458024,
+  "minimal_input_sha256": "19a6371e952b5d0b50d9305e57acba03055ab167eae644583273db1bac1f9076",
+  "total_pages": 500,
+  "source_documents": 291,
+  "source_rounding_convention_explicitly_documented": false,
+  "primary_analysis_display_assumption": "Nearest 0.001, inclusive half-unit endpoints; both tie conventions admitted",
+  "sensitivity_display_assumption": "Truncation to 0.001",
+  "applicability_assumption": "Common full-schema Direct+Linkage applicable-page set for all Table 3 systems",
+  "validity_assumption": "The reported page-validity indicator is the page-level unusable-output predicate; its false outcomes are scored as empty prediction sets",
+  "source_limitations": "Challenge-set page counts and typed IoU matching; no deployment sampling claim, no final-artifact containment measurement",
+  "redistribution": "Only numerical facts, system labels, original code and analysis are included. Full paper HTML is not redistributed.",
+  "primary_source_locators": [
+    {
+      "locator": "Section 3.3",
+      "paraphrase": "Headline DocLeak uses same-type matching at an IoU threshold; it is not complete-mask containment."
+    },
+    {
+      "locator": "Section 3.4, equation (1)",
+      "paraphrase": "Each DocLeak denominator consists of pages containing an in-scope gold identifier."
+    },
+    {
+      "locator": "Section 6, introduction and Table 3 caption",
+      "paraphrase": "Full-schema evaluation retains unsupported labels as misses. Page validity describes parseable, schema-conformant output; malformed or unusable outputs are scored as empty predictions."
+    },
+    {
+      "locator": "Table 4 and its caption",
+      "paraphrase": "The separate supported-type evaluation changes the gold scope by system and is excluded from this reconstruction."
+    },
+    {
+      "locator": "Section 4.4, Table 2",
+      "paraphrase": "The corpus has 500 pages from 291 source documents."
+    },
+    {
+      "locator": "Appendix B, OCR-free conversion and validation",
+      "paraphrase": "The invalid-output conversion is described before scoring, without model-specific repair."
+    }
+  ],
+  "short_primary_quotes": [
+    "Valid denotes parseable, schema-conformant page outputs.",
+    "Unsupported types and invalid outputs count as misses",
+    "pages with at least one in-scope identifier"
+  ]
+}

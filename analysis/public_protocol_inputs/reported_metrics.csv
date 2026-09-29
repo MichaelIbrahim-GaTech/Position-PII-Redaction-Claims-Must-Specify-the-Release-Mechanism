@@ -1,0 +1,15 @@
+system,ocr,docleak_crit,valid
+Presidio,Tesseract,0.990,0.996
+Presidio-best (GLiNER restr.),Textract,0.986,1.000
+GLiNER-base,Textract,0.978,1.000
+GLiNER-multi-PII,Textract,0.972,1.000
+NVIDIA GLiNER PII,Textract,0.986,1.000
+GLiNER2,Textract,0.994,0.998
+Amazon Comprehend PII,Textract,0.968,1.000
+OpenAI Privacy Filter,Textract,0.990,0.806
+Google DLP,Vendor,1.000,1.000
+Qwen3-VL-32B,—,0.998,0.666
+InternVL3-38B,—,1.000,0.540
+GPT-5.4,—,1.000,1.000
+GPT-5.5,—,0.990,1.000
+GPT-5.5 + Code Interpreter,—,0.968,1.000

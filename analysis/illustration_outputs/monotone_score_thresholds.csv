@@ -1,0 +1,5 @@
+score_threshold,released_records,failed_releases,coverage,conditional_failure_proportion
+0.01,1000,10,0.25,0.01
+0.05,2000,60,0.5,0.03
+0.1,3000,160,0.75,0.05333333333333334
+0.2,4000,360,1.0,0.09

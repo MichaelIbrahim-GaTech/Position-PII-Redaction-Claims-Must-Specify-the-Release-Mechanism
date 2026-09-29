@@ -1,0 +1,57 @@
+system,formatting,denominator_information,reported_valid,reported_critical_docleak,all_pages,valid_all_pages,critical_pages_min,critical_pages_max,valid_critical_pages_min,valid_critical_pages_max,lower_bound,upper_bound,lower_bound_fraction,upper_bound_fraction,feasible_count_completions,interpretation
+Presidio,nearest,all_14_rows,0.996,0.990,500,498,493,500,491,498,0.9898167006109979,0.9899598393574297,486/491,493/498,21,finite_table_typed_IoU_matching_not_confidence_or_containment
+Presidio-best (GLiNER restr.),nearest,all_14_rows,1.000,0.986,500,500,493,500,493,500,0.9858012170385395,0.986,486/493,493/500,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-base,nearest,all_14_rows,1.000,0.978,500,500,493,500,493,500,0.9776876267748479,0.978,482/493,489/500,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-multi-PII,nearest,all_14_rows,1.000,0.972,500,500,493,500,493,500,0.9716024340770791,0.972,479/493,243/250,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+NVIDIA GLiNER PII,nearest,all_14_rows,1.000,0.986,500,500,493,500,493,500,0.9858012170385395,0.986,486/493,493/500,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER2,nearest,all_14_rows,0.998,0.994,500,499,493,500,492,499,0.9939024390243902,0.9939879759519038,163/164,496/499,15,finite_table_typed_IoU_matching_not_confidence_or_containment
+Amazon Comprehend PII,nearest,all_14_rows,1.000,0.968,500,500,493,500,493,500,0.9675456389452333,0.968,477/493,121/125,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+OpenAI Privacy Filter,nearest,all_14_rows,0.806,0.990,500,403,493,500,396,403,0.9873737373737373,0.9875930521091811,391/396,398/403,36,finite_table_typed_IoU_matching_not_confidence_or_containment
+Google DLP,nearest,all_14_rows,1.000,1.000,500,500,493,500,493,500,1.0,1.0,1,1,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+Qwen3-VL-32B,nearest,all_14_rows,0.666,0.998,500,333,493,500,326,333,0.9969325153374233,0.996996996996997,325/326,332/333,36,finite_table_typed_IoU_matching_not_confidence_or_containment
+InternVL3-38B,nearest,all_14_rows,0.540,1.000,500,270,493,500,263,270,1.0,1.0,1,1,36,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.4,nearest,all_14_rows,1.000,1.000,500,500,493,500,493,500,1.0,1.0,1,1,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5,nearest,all_14_rows,1.000,0.990,500,500,493,500,493,500,0.9898580121703854,0.99,488/493,99/100,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5 + Code Interpreter,nearest,all_14_rows,1.000,0.968,500,500,493,500,493,500,0.9675456389452333,0.968,477/493,121/125,8,finite_table_typed_IoU_matching_not_confidence_or_containment
+Presidio,nearest,own_row_only,0.996,0.990,500,498,96,500,94,498,0.9893617021276596,0.9904988123515439,93/94,417/421,372,finite_table_typed_IoU_matching_not_confidence_or_containment
+Presidio-best (GLiNER restr.),nearest,own_row_only,1.000,0.986,500,500,69,500,69,500,0.9855072463768116,0.9864864864864865,68/69,73/74,129,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-base,nearest,own_row_only,1.000,0.978,500,500,45,500,45,500,0.9775,0.978494623655914,391/400,91/93,128,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-multi-PII,nearest,own_row_only,1.000,0.972,500,500,36,500,36,500,0.9715025906735751,0.9725,375/386,389/400,125,finite_table_typed_IoU_matching_not_confidence_or_containment
+NVIDIA GLiNER PII,nearest,own_row_only,1.000,0.986,500,500,69,500,69,500,0.9855072463768116,0.9864864864864865,68/69,73/74,129,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER2,nearest,own_row_only,0.998,0.994,500,499,154,500,153,499,0.9934640522875817,0.9944903581267218,152/153,361/363,245,finite_table_typed_IoU_matching_not_confidence_or_containment
+Amazon Comprehend PII,nearest,own_row_only,1.000,0.968,500,500,31,500,31,500,0.9675,0.9684873949579832,387/400,461/476,125,finite_table_typed_IoU_matching_not_confidence_or_containment
+OpenAI Privacy Filter,nearest,own_row_only,0.806,0.990,500,403,96,500,1,403,0.0,0.9904761904761905,0,104/105,10024,finite_table_typed_IoU_matching_not_confidence_or_containment
+Google DLP,nearest,own_row_only,1.000,1.000,500,500,1,500,1,500,1.0,1.0,1,1,500,finite_table_typed_IoU_matching_not_confidence_or_containment
+Qwen3-VL-32B,nearest,own_row_only,0.666,0.998,500,333,400,500,233,333,0.9957081545064378,0.996996996996997,232/233,332/333,5151,finite_table_typed_IoU_matching_not_confidence_or_containment
+InternVL3-38B,nearest,own_row_only,0.540,1.000,500,270,1,500,1,270,1.0,1.0,1,1,62370,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.4,nearest,own_row_only,1.000,1.000,500,500,1,500,1,500,1.0,1.0,1,1,500,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5,nearest,own_row_only,1.000,0.990,500,500,96,500,96,500,0.989501312335958,0.9904988123515439,377/381,417/421,125,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5 + Code Interpreter,nearest,own_row_only,1.000,0.968,500,500,31,500,31,500,0.9675,0.9684873949579832,387/400,461/476,125,finite_table_typed_IoU_matching_not_confidence_or_containment
+Presidio,truncation,all_14_rows,0.996,0.990,500,498,500,500,498,498,0.9899598393574297,0.9899598393574297,493/498,493/498,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+Presidio-best (GLiNER restr.),truncation,all_14_rows,1.000,0.986,500,500,500,500,500,500,0.986,0.986,493/500,493/500,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-base,truncation,all_14_rows,1.000,0.978,500,500,500,500,500,500,0.978,0.978,489/500,489/500,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-multi-PII,truncation,all_14_rows,1.000,0.972,500,500,500,500,500,500,0.972,0.972,243/250,243/250,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+NVIDIA GLiNER PII,truncation,all_14_rows,1.000,0.986,500,500,500,500,500,500,0.986,0.986,493/500,493/500,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER2,truncation,all_14_rows,0.998,0.994,500,499,500,500,499,499,0.9939879759519038,0.9939879759519038,496/499,496/499,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+Amazon Comprehend PII,truncation,all_14_rows,1.000,0.968,500,500,500,500,500,500,0.968,0.968,121/125,121/125,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+OpenAI Privacy Filter,truncation,all_14_rows,0.806,0.990,500,403,500,500,403,403,0.9875930521091811,0.9875930521091811,398/403,398/403,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+Google DLP,truncation,all_14_rows,1.000,1.000,500,500,500,500,500,500,1.0,1.0,1,1,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+Qwen3-VL-32B,truncation,all_14_rows,0.666,0.998,500,333,500,500,333,333,0.996996996996997,0.996996996996997,332/333,332/333,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+InternVL3-38B,truncation,all_14_rows,0.540,1.000,500,270,500,500,270,270,1.0,1.0,1,1,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.4,truncation,all_14_rows,1.000,1.000,500,500,500,500,500,500,1.0,1.0,1,1,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5,truncation,all_14_rows,1.000,0.990,500,500,500,500,500,500,0.99,0.99,99/100,99/100,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5 + Code Interpreter,truncation,all_14_rows,1.000,0.968,500,500,500,500,500,500,0.968,0.968,121/125,121/125,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+Presidio,truncation,own_row_only,0.996,0.990,500,498,100,500,98,498,0.9897959183673469,0.990990990990991,97/98,110/111,343,finite_table_typed_IoU_matching_not_confidence_or_containment
+Presidio-best (GLiNER restr.),truncation,own_row_only,1.000,0.986,500,500,72,500,72,500,0.986,0.9869848156182213,493/500,455/461,115,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-base,truncation,own_row_only,1.000,0.978,500,500,46,500,46,500,0.978,0.9789915966386554,489/500,233/238,120,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER-multi-PII,truncation,own_row_only,1.000,0.972,500,500,36,500,36,500,0.972,0.972972972972973,243/250,36/37,125,finite_table_typed_IoU_matching_not_confidence_or_containment
+NVIDIA GLiNER PII,truncation,own_row_only,1.000,0.986,500,500,72,500,72,500,0.986,0.9869848156182213,493/500,455/461,115,finite_table_typed_IoU_matching_not_confidence_or_containment
+GLiNER2,truncation,own_row_only,0.998,0.994,500,499,167,500,166,499,0.9939759036144579,0.9949874686716792,165/166,397/399,199,finite_table_typed_IoU_matching_not_confidence_or_containment
+Amazon Comprehend PII,truncation,own_row_only,1.000,0.968,500,500,32,500,32,500,0.968,0.9689922480620154,121/125,125/129,124,finite_table_typed_IoU_matching_not_confidence_or_containment
+OpenAI Privacy Filter,truncation,own_row_only,0.806,0.990,500,403,100,500,3,403,0.6666666666666666,0.990990990990991,2/3,110/111,10312,finite_table_typed_IoU_matching_not_confidence_or_containment
+Google DLP,truncation,own_row_only,1.000,1.000,500,500,1,500,1,500,1.0,1.0,1,1,500,finite_table_typed_IoU_matching_not_confidence_or_containment
+Qwen3-VL-32B,truncation,own_row_only,0.666,0.998,500,333,500,500,333,333,0.996996996996997,0.996996996996997,332/333,332/333,1,finite_table_typed_IoU_matching_not_confidence_or_containment
+InternVL3-38B,truncation,own_row_only,0.540,1.000,500,270,1,500,1,270,1.0,1.0,1,1,62370,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.4,truncation,own_row_only,1.000,1.000,500,500,1,500,1,500,1.0,1.0,1,1,500,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5,truncation,own_row_only,1.000,0.990,500,500,100,500,100,500,0.99,0.990990990990991,99/100,110/111,115,finite_table_typed_IoU_matching_not_confidence_or_containment
+GPT-5.5 + Code Interpreter,truncation,own_row_only,1.000,0.968,500,500,32,500,32,500,0.968,0.9689922480620154,121/125,125/129,124,finite_table_typed_IoU_matching_not_confidence_or_containment

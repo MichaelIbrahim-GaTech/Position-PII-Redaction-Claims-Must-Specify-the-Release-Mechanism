@@ -1,0 +1,29 @@
+system,endpoint,status,D,F,V,I,valid_critical_pages,valid_critical_failures,exact_ratio
+Presidio,lower,compatible_count_completion_not_observed_page_data,493,488,498,2,491,486,486/491
+Presidio,upper,compatible_count_completion_not_observed_page_data,500,495,498,2,498,493,493/498
+Presidio-best (GLiNER restr.),lower,compatible_count_completion_not_observed_page_data,493,486,500,0,493,486,486/493
+Presidio-best (GLiNER restr.),upper,compatible_count_completion_not_observed_page_data,500,493,500,0,500,493,493/500
+GLiNER-base,lower,compatible_count_completion_not_observed_page_data,493,482,500,0,493,482,482/493
+GLiNER-base,upper,compatible_count_completion_not_observed_page_data,500,489,500,0,500,489,489/500
+GLiNER-multi-PII,lower,compatible_count_completion_not_observed_page_data,493,479,500,0,493,479,479/493
+GLiNER-multi-PII,upper,compatible_count_completion_not_observed_page_data,500,486,500,0,500,486,243/250
+NVIDIA GLiNER PII,lower,compatible_count_completion_not_observed_page_data,493,486,500,0,493,486,486/493
+NVIDIA GLiNER PII,upper,compatible_count_completion_not_observed_page_data,500,493,500,0,500,493,493/500
+GLiNER2,lower,compatible_count_completion_not_observed_page_data,493,490,499,1,492,489,163/164
+GLiNER2,upper,compatible_count_completion_not_observed_page_data,500,497,499,1,499,496,496/499
+Amazon Comprehend PII,lower,compatible_count_completion_not_observed_page_data,493,477,500,0,493,477,477/493
+Amazon Comprehend PII,upper,compatible_count_completion_not_observed_page_data,500,484,500,0,500,484,121/125
+OpenAI Privacy Filter,lower,compatible_count_completion_not_observed_page_data,493,488,403,97,396,391,391/396
+OpenAI Privacy Filter,upper,compatible_count_completion_not_observed_page_data,500,495,403,97,403,398,398/403
+Google DLP,lower,compatible_count_completion_not_observed_page_data,493,493,500,0,493,493,1
+Google DLP,upper,compatible_count_completion_not_observed_page_data,500,500,500,0,500,500,1
+Qwen3-VL-32B,lower,compatible_count_completion_not_observed_page_data,493,492,333,167,326,325,325/326
+Qwen3-VL-32B,upper,compatible_count_completion_not_observed_page_data,500,499,333,167,333,332,332/333
+InternVL3-38B,lower,compatible_count_completion_not_observed_page_data,493,493,270,223,270,270,1
+InternVL3-38B,upper,compatible_count_completion_not_observed_page_data,500,500,270,230,270,270,1
+GPT-5.4,lower,compatible_count_completion_not_observed_page_data,493,493,500,0,493,493,1
+GPT-5.4,upper,compatible_count_completion_not_observed_page_data,500,500,500,0,500,500,1
+GPT-5.5,lower,compatible_count_completion_not_observed_page_data,493,488,500,0,493,488,488/493
+GPT-5.5,upper,compatible_count_completion_not_observed_page_data,500,495,500,0,500,495,99/100
+GPT-5.5 + Code Interpreter,lower,compatible_count_completion_not_observed_page_data,493,477,500,0,493,477,477/493
+GPT-5.5 + Code Interpreter,upper,compatible_count_completion_not_observed_page_data,500,484,500,0,500,484,121/125

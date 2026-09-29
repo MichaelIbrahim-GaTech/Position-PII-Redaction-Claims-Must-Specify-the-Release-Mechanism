@@ -1,0 +1,120 @@
+{
+  "record_scope": "Completed hypothetical example, not a deployment or measured model evaluation",
+  "original_claim": {
+    "loss": "At least one annotated policy-required source position remains unmasked",
+    "denominator": "Conversations released by g0",
+    "target_upper_risk": 0.001,
+    "confidence": 0.95
+  },
+  "population": {
+    "source": "Fictional English customer-support service",
+    "period": "Prespecified month",
+    "release_and_sampling_unit": "Complete conversation",
+    "sampling_assumption": "Independent and identically distributed from the same fixed population"
+  },
+  "policy": {
+    "id": "hypothetical-names-emails-phones-v1",
+    "required_content": "All annotated personal names, email addresses, and phone numbers belonging to any mentioned person"
+  },
+  "mechanism": {
+    "id": "hypothetical-validated-wrapper-g0-v1",
+    "extractor": "Fixed deterministic parameter f; no model instantiated",
+    "specification": "Manuscript Section VI-B",
+    "output": "Only rendered plain UTF-8 text",
+    "gate": "Valid decoding, extraction, tuples and rendering; input length at most 4,096 code points"
+  },
+  "audit": {
+    "provenance": "Stipulated counts, not measured outcomes",
+    "fixed_input_count": 5000,
+    "released_count": 3000,
+    "failure_count": 0,
+    "protected_content_released_count": 300,
+    "method": "One-sided exact Clopper-Pearson",
+    "error_probability": 0.05,
+    "upper_risk": 0.0009980790119965555,
+    "coverage_estimate": 0.6,
+    "protected_content_prevalence_estimate": 0.1,
+    "descriptive_estimates_certified": false
+  },
+  "update": {
+    "id": "mask-expansion-update1",
+    "rule": "Extend every thresholded span one code point on either side; clip at boundaries and union with old masks",
+    "acceptance": "Preserve every g0 decision exactly",
+    "unchanged": [
+      "policy",
+      "population",
+      "release unit",
+      "delivered channels"
+    ]
+  },
+  "justification": {
+    "type": "Structural inheritance",
+    "relation": "L1 <= L0 pointwise on all relevant released inputs",
+    "basis": "Original mask set is included and replacement is total on validated inputs",
+    "confidence_event": "Same original event; no additional confidence allocation"
+  },
+  "applicability": {
+    "status": "Conditional record of the hypothetical justification, not proof that its assumptions hold in an implementation or population",
+    "conditions": {
+      "population_and_unit": "Same justified target population and complete-conversation release and sampling unit, with the stated independence assumptions",
+      "policy_and_labels": "Same protected subjects, required positions and loss; audit labels correctly and independently cover the declared policy",
+      "delivered_channels": "Only the specified rendered UTF-8 text is delivered; no additional source text, metadata or other observable representation is supplied",
+      "acceptance_and_masks": "Every original g0 acceptance decision is preserved, and the complete rendered mask contains the original mask on every relevant accepted input",
+      "audit_and_confidence": "The original sampling and confidence procedure remains applicable; inheritance follows from the structural relation, not dominance observed only on audited examples"
+    },
+    "time_scope": "No automatic calendar expiry is assigned. Use outside the stated source or period requires justification that the population assumptions remain applicable.",
+    "effect_of_a_change": "A change stops automatic extension to the changed mechanism or scope, not the original claim within its valid original scope. Evidence that an original assumption was false requires separate reassessment of that original claim."
+  },
+  "changes_requiring_reassessment": [
+    {
+      "change": "A recipient-visible channel or representation is added or altered",
+      "stop_extension_when": "The existing loss or concealment argument does not cover the complete new observation",
+      "reassessment": "Establish output equivalence or concealment for all delivered channels; otherwise evaluate the affected representation using existing labels where adequate and add evidence only where coverage is missing"
+    },
+    {
+      "change": "Protected subjects, content, annotation rules or labels change",
+      "stop_extension_when": "The original policy-to-loss relation or annotation coverage is no longer justified",
+      "reassessment": "Map old and new required positions. A narrower policy may inherit a bound under compatible outputs and acceptance but weakens the promise; a broader policy needs labels covering the additions. Correct audit-label errors and recompute affected evidence"
+    },
+    {
+      "change": "Acceptance decisions change, including through changed scores or failure handling",
+      "stop_extension_when": "The same-gate preservation argument no longer applies",
+      "reassessment": "Recompute from linked retained audit labels when the sampling and selection assumptions permit. Otherwise use a justified transfer calculation with retention uncertainty or obtain the missing evidence; do not automatically require a full new audit"
+    },
+    {
+      "change": "Extraction, offsets, mask construction or rendering changes",
+      "stop_extension_when": "Original-mask inclusion on the actual delivered output is no longer structurally justified",
+      "reassessment": "Establish an end-to-end preservation relation or reevaluate the affected outputs against adequate existing labels. Regression examples alone do not prove pointwise inheritance"
+    },
+    {
+      "change": "Input source, population scope, release grouping or sampling unit changes",
+      "stop_extension_when": "The original sampling or unit-level loss no longer supports the proposed population claim",
+      "reassessment": "Justify reuse of the existing sample and regroup linked records where valid. Recompute the appropriate loss and uncertainty; collect evidence for the changed population or unit only where existing information is insufficient"
+    }
+  ],
+  "decision": {
+    "claim": "Reuse original containment upper bound",
+    "new_labeled_audit_required": false,
+    "scope_exclusions": [
+      "Utility is unmeasured",
+      "No inference-attack guarantee"
+    ]
+  },
+  "separate_restriction_comparison": {
+    "id": "length-gate-g2",
+    "rule": "g0 and length<=2048",
+    "selected_before_audit": true,
+    "retained_count": 1500,
+    "retained_failure_count": 0,
+    "direct_recomputed_upper_risk": 0.0019951618622789857,
+    "direct_error_probability": 0.05,
+    "transfer_upper_risk": 0.0025497955011723815,
+    "transfer_error_allocation": {
+      "old_risk": 0.025,
+      "retention": 0.025
+    },
+    "joint_coverage_across_comparisons_claimed": false,
+    "decision": "Original 0.1% target not established for g2; baseline g0 claim unchanged",
+    "interpretation": "Fewer relevant labeled observations, not demonstrated true-risk increase"
+  }
+}

@@ -1,0 +1,9 @@
+An updated PII redaction system should inherit a numerical release claim only through a preservation argument, a valid transfer calculation, or new evidence. Assurance maintenance and selective-risk methods already supply the general principles. The proposed contribution is their application to redaction decisions whose losses and denominators can change independently.
+
+Three reporting requirements make the position concrete: retain output validity before normalization; report applicability and release decisions jointly with evaluated failures; and attach evidence to the loss and recipient-visible channels. These distinguish a valid empty prediction from a failed output, an eligible evaluation record from a released record, and geometric matching from complete concealment.
+
+An application to the 14 full-schema rows of LeakageBench Table 3 derives compatible matching-failure ranges after invalid outputs are withheld. Explicit integer and rounding constraints, a worked row, and sensitivity analyses make the deduction inspectable. Under the stated assumptions, all five systems with nonunit validity retain failure above 98%. Thus, validity-only withholding cannot establish a target below 98% on this challenge set. The analysis identifies joint counts needed for exact recounts; it does not measure deployment risk or concealment.
+
+A separate hypothetical audit shows that mask expansion can inherit one baseline confidence event, whereas a predefined release restriction can leave a target unsupported because fewer relevant observations remain. A completed reuse record assigns responsibilities and identifies changes that prevent extending its justification, while distinguishing those changes from defects in the original audit.
+
+The intended community change is specific reassessment: preserve applicable evidence, retain information needed for future recounts, and reassess the claims affected by an update.

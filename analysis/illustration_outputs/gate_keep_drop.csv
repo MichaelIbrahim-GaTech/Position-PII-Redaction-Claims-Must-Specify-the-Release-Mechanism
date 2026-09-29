@@ -1,0 +1,2 @@
+old_released_records,kept_records,dropped_records,kept_failures,dropped_failures,retention_fraction_rho,old_risk,keep_risk_new_risk,drop_risk,new_minus_old_risk
+800,80,720,8,0,0.1,0.01,0.1,0.0,0.09000000000000001
